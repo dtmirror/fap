@@ -53,3 +53,10 @@ tests                    contains various tests for the advanced application
     codeception/         contains tests developed with Codeception PHP Testing Framework
 ```
 # fap
+
+
+COPY Vendors: composer install --prefer-dist
+
+MIGRATE DB:
+./yii migrate
+./yii migrate/create <sql_name>
